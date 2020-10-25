@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/098aa10850.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" class="ref" />
+    <title>Assignment Week Two</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form class="search-weather" id="search-from">
+                <input type="text" placeholder="Enter City" id="search-text-input" />
+                <button id="button-search">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                        <path fill-rule="evenodd"
+                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                    </svg>
+                </button>
+                <button type="current-button" class="btn btn-dark">Current Location </button>
+            </form>
+            <br>
+            <h1 id="city">Toronto</h1>
+            <h3>
+                <div id="current-temperature"> 30 </div>
+                </br>
+                <a href="#" id="celsiusTemperature"> ℃ |</a>
+                <a href="#" id="faherenheitTemperature"> ℉ </a>
+            </h3>
+            <div class="main-sun">
+                <i class="fas fa-sun"></i>
+            </div>
+            <h2> Tuesday September 29, 2020 9:14pm </h2>
+            </br>
+            <div class="row">
+                <div class="col" id="humidity"> Humidity: 35 ℃</i></div>
+                <div class="col" id="feelsLike">Feels Like: 29 ℃</i></div>
+                <div class="col" id="wind-speed">Wind: 25 Km/h</i></div>
+            </div>
+            <hr class="style1">
+            <h4> 5 Day Forcast </h4>
+            </hr>
+            </br>
+            <div class="days">
+                <div class="row">
+                    <div class="col">Monday
+                        <i class="fas fa-bolt"></i>
+                        <strong>
+                            30℃
+                        </strong>
+                    </div>
+                    <div class="col">Tuesday
+                        <i class="fas fa-sun"></i>
+                        <strong>
+                            35℃
+                        </strong>
+                    </div>
+                    <div class="col">Wednesday
+                        <i class="fas fa-sun"></i>
+                        <strong>
+                            30℃
+                        </strong>
+                    </div>
+                    <div class="col">Thursday
+                        <i class="fas fa-cloud-rain"></i>
+                        <strong>
+                            29℃
+                        </strong>
+                    </div>
+                    <div class="col">Friday
+                        <i class="fas fa-cloud-sun"></i>
+                        <strong>
+                            30℃
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="src/index.js"></script>
+
+</html>
