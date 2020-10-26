@@ -98,7 +98,7 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-from");
 form.addEventListener("submit", handleSubmit);
 
-function retrievePosition(position) {
+function currentPosition(position) {
   let apiKey = "9e561b29043530ea13bc0b5afe781a8a";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
@@ -106,5 +106,5 @@ function retrievePosition(position) {
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&unit=metric&appid=${apiKey}`;
   axios.get(url).then(showWeather);
 }
-let currentButton = docuement.Selector ("#current-button");
-currentButton.addEventListener("click", retrievePosition);
+let currentButton = docuement.Selector("#current-button");
+currentButton.addEventListener("click", currentPosition);
