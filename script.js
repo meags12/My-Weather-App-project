@@ -95,7 +95,6 @@ function handleSubmit(event) {
   let city = document.querySelector("#search-text-input").value;
   searchCity(city);
 }
-
 let form = document.querySelector("#search-from");
 form.addEventListener("submit", handleSubmit);
 
@@ -107,5 +106,5 @@ function retrievePosition(position) {
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&unit=metric&appid=${apiKey}`;
   axios.get(url).then(showWeather);
 }
-
-navigator.geolocation.getCurrentPosition(retrievePosition);
+let currentButton = docuement.Selector ("#current-button");
+currentButton.addEventListener("click", retrievePosition);
