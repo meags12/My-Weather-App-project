@@ -108,3 +108,4 @@ function currentPosition(position) {
 }
 let currentButton = docuement.Selector("#current-button");
 currentButton.addEventListener("click", currentPosition);
+
