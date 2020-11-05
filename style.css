@@ -1,6 +1,10 @@
 body {
   font-family: "Merriweather", serif;
 }
+.weather-app-wrapper {
+  margin: 0, auto;
+  max-width: 750px;
+}
 .weather-app {
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   text-align: center;
