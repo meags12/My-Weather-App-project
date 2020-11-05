@@ -98,6 +98,24 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-from");
 form.addEventListener("submit", handleSubmit);
 
+function dailyTemperature(response){
+let temperatureElement = document.querySelector("#temperature");
+let cityElement = document.querySelector("#city");
+let descriptionElement = document.querySelector("#description");
+let humidityElement = document.querySelector("#humidity");
+let windElement = document.querySelector("#wind");
+let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
+
+temperatureElement.innerHTML = Math.round(response.data.main.temp);
+cityElement.innerHTML = response.data.name;
+descriptionElement.innerHTML = response.data.weather[0].description;
+humidityElement.innerHTML = response.data.main.humdity;
+windElement.innerHTML = Math.round(response.data.wind.speed);
+dateElement.innerHTML = formatDate (response.data.dt. * 1000);
+iconElement.innerHTML = "http://openweathermap.org/img/wn/10d@2x.png"
+}
+
 function currentPosition(position) {
   let apiKey = "9e561b29043530ea13bc0b5afe781a8a";
   let lat = position.coords.latitude;
