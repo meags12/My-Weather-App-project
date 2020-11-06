@@ -101,7 +101,6 @@ form.addEventListener("submit", handleSubmit);
 function dailyTemperature(response){
 let temperatureElement = document.querySelector("#temperature");
 let cityElement = document.querySelector("#city");
-let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let feelslikeElement = document.querySelector("#feels_like")
 let windElement = document.querySelector("#wind");
@@ -110,7 +109,6 @@ let iconElement = document.querySelector("#icon");
 
 temperatureElement.innerHTML = Math.round(response.data.main.temp);
 cityElement.innerHTML = response.data.name;
-descriptionElement.innerHTML = response.data.weather[0].description;
 humidityElement.innerHTML = response.data.main.humdity;
 feelslikeElement.innerHTML = response.data.main.feels_like;
 windElement.innerHTML = Math.round(response.data.wind.speed);
