@@ -3,7 +3,7 @@ body {
 }
 .weather-app {
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  text-align: center;
+  text-align: left;
   border: 4px solid black;
   padding: 20px;
   margin: 20px auto;
@@ -12,29 +12,30 @@ body {
 }
 #celsiusTemperature {
   color: black;
-  text-align: center;
+  display: list-item;
   line-height: 1px;
 }
 #faherenheitTemperature {
   color: black;
-  text-align: center;
+  display: list-item;
   line-height: 1px;
 }
 .current-temperature {
   font-size: 40px;
   font-family: "Merriweather", serif;
   color: blue;
+  text-align: left;
 }
 h1 {
   font-family: "Merriweather", serif;
-  text-align: center;
+  text-align: left;
   color: black;
   font-size: 25px;
   padding: 5px;
 }
 h2 {
   font-family: "Merriweather", serif;
-  text-align: center;
+  text-align: left;
   color: black;
   font-size: 25px;
 }
