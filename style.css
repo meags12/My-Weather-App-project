@@ -12,23 +12,22 @@ body {
 }
 #celsiusTemperature {
   color: black;
-  display: list-item;
+  display: left;
   line-height: 1px;
 }
 #faherenheitTemperature {
   color: black;
-  display: list-item;
+  display: left;
   line-height: 1px;
 }
 .current-temperature {
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Merriweather", serif;
-  color: blue;
   text-align: left;
 }
 h1 {
   font-family: "Merriweather", serif;
-  text-align: left;
+  text-align: center;
   color: black;
   font-size: 25px;
   padding: 5px;
@@ -53,11 +52,13 @@ hr.style1 {
 }
 button {
   background: transparent;
-  border-radius: 2px;
+  position: center;
+  border-radius: 4px;
   border-color: black;
 }
 #current-button {
-  border-radius: 1.5px;
+  border-radius: 4px;
+  position: center;
 }
 .daily-temperature img {
   font-size: 100px;
